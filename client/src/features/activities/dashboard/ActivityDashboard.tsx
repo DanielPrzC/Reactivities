@@ -34,7 +34,7 @@ const ActivityDashboard = ({
         <ActivityList activities={activities} selectActivity={selectActivity} deleteActivity={deleteActivity} />
       </Grid.Column>
       <Grid.Column width="6">
-        {selectedActivity && (
+        {selectedActivity && !editMode && (
           <ActivityDetails
             activity={selectedActivity}
             cancelSelectActivity={cancelSelectActivity}
